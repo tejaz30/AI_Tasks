@@ -28,11 +28,6 @@ The gradient tells us which direction to move the image pixels to make the embed
 We update the image step by step using Adam optimizer.
 This optimizer helps us tweak the learning rate or the step size according to the loss function that is calculated.
 
-The mathematics:
-
-   
-
-
 
 **How the Code Works:**
 Load the pre-trained ResNet-18 model (without the classification layer).
@@ -44,3 +39,10 @@ Load an image, convert it into a tensor, and enable gradient updates.
 Iteratively modify the image using gradient descent until its embedding is similar to the target embedding (MSE < 1e-3).
 
 Save the modified image when the condition is met.
+
+
+
+**The mathematics:**
+
+![Gradient Descent](https://github.com/user-attachments/assets/3b1d8a2a-831f-48a2-a46a-f31015407ff0)
+![Back](https://github.com/user-attachments/assets/817561dd-f98d-4fc3-bcea-d338c331a649)
